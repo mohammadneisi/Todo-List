@@ -1,0 +1,11 @@
+
+
+@font-face {
+    font-family:'vazir';
+    src: url(/assets/font/Vazir-Bold.woff) format('woff');
+}
+
+@font-face {
+    font-family:'vazir';
+    src: url(/assets/font/Vazir.woff) format('woff');
+}

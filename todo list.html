@@ -9,7 +9,39 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+
+    <header>
+        <h1>todo list</h1>
+    </header>
+
+
+    <div class="form-container">
+
+        <form action="">
+            <input type="text">
+            <i class="fas fa-plus-circle"></i>
+        </form>
+
+    </div>
     
+    
+    <div class="todo-container">
+        <ul class="todo">
+            <li>task1</li>
+            <span><i class="far fa-check-square"></i></span>
+            <span><i class="fal fa-trash-alt"></i></span>
+        </ul>
+    </div>
+    
+    
+        <div class="select">
+            <select class="filter-todos" name="todos" id="">
+                <option value="" class="all">all</option>
+                <option value="" class="completed">completed</option>
+                <option value="" class="uncompleted">uncompleted</option>
+            </select>
+    
+        </div>
 </body>
 <script src="/todo list.js"></script>
 </html>

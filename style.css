@@ -18,12 +18,106 @@ html{
 /* root vatiable */
 :root{
     
-    --primary-color: #FF5722;
-    --secondary-color: #FFF6F2;
+    --primary-color: #6d28d9;
+    --secondary-color: #ede9fe;
     --main-white:#fff;
     --main-black:#222;
     --main-gray:#7c7c7c;
     --main-spacing:0.1rem;
     --main-red:#db2777;
     --body-color:#f6f6f6;
+}
+
+
+body{
+    font-family: 'vazir';
+    color: var(--main-black);
+    background-color: var(--body-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    min-height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.form-container{
+   display: flex;
+}
+
+.todo-container{
+    width: 30rem;
+}
+
+form{
+    width: 30rem;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+form input{
+    flex-grow: 1;
+}
+
+
+form input , 
+form .todo-button {
+    border: 0;
+    outline: 0;
+    background-color: var(--main-white);
+    font-size: 1.5rem;
+    padding: .5rem;
+}
+
+form .todo-button{
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+form .todo-button:hover{
+    background-color: var(--primary-color);
+    color: var(--main-white);
+}
+
+.todo{
+    display: flex;
+    background-color: var(--secondary-color);
+    justify-content: space-between;
+    align-items: center;
+    margin: .3rem 0;
+    transition: all .3s ease;
+}
+
+.todo li{
+    font-size: 1.5rem;
+    flex-grow: 1;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+.todo span{
+    display: block;
+    font-size: 1.5rem;
+    padding:.5rem 1rem;
+    cursor: pointer;
+}
+
+.fa-trash-alt{
+    color: var(--main-red);
+}
+.fa-check-square{
+    color: var(--primary-color);
 }

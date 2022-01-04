@@ -123,7 +123,43 @@ form .todo-button:hover{
     color: var(--primary-color);
 }
 
+
+/* ................................. */
+
 .completed{
     text-decoration: line-through;
     opacity: .5;
+}
+
+/* ................................. */
+
+
+/* filter-todos: */
+
+.filter-todos{
+    appearance: none;
+    border: 0;
+    outline: 0;
+    width: 100%;
+    padding: 1rem;
+    color: var(--primary-color);
+}
+
+.select{
+    margin-left: 1rem;
+    background-color: var(--main-white);
+    cursor: pointer;
+    width: 14rem;
+    font-weight: bold;
+    position: relative;
+}
+
+.select::after{
+    content: '\25BC';
+    position: absolute;
+    top:0;
+    right: 0;
+    padding: 1rem;
+    color: var(--primary-color);
+    pointer-events: none;
 }

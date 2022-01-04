@@ -18,33 +18,27 @@
 
         <div class="form-container">
             <form action="">
-                <input type="text">
+                <input class="todo-input" type="text">
                 <button class="todo-button" type="submit"> <i class="fas fa-plus-circle"></i></button>
             </form>
 
 
             <div class="select">
                 <select class="filter-todos" name="todos" id="">
-                    <option value="" class="all">all</option>
-                    <option value="" class="completed">completed</option>
-                    <option value="" class="uncompleted">uncompleted</option>
+                    <option value="all" >all</option>
+                    <option value="completed" >completed</option>
+                    <option value="uncompleted" >uncompleted</option>
                 </select>
             </div>
             
         </div>
         
-        
-        
-        <div class="todo-container">
-            <ul class="todo">
-                <li>task1</li>
-                <span><i class="far fa-check-square"></i></span>
-                <span><i class="far fa-trash-alt"></i></span>
-            </ul>
-        </div>
-        
-    
 
+        <div class="todo-container">
+            <ul class="todo-list"></ul>
+        </div>
+
+        
     </section>
     
 </body>
